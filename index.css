@@ -137,11 +137,28 @@
   animation-delay: 4s, 2.5s
 }
 
+/* Start https://www.cursors-4u.com */
+* {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur), auto !important;
+}
+
+/* End https://www.cursors-4u.com */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin: auto;
   margin-top: 15px;
   width: 800px;
   padding: 15px;
+}
+
+p {
+  margin: 10px 0px;
+  ;
+  line-height: 1.5em;
 }
 
 .begin {
@@ -156,8 +173,8 @@ body {
   filter: drop-shadow(0px 5px 5px #0000007a);
   width: 140px;
   rotate: -25deg;
-  bottom: 100px;
-  left: 390px;
+  bottom: 5px;
+  left: 275px;
 }
 
 .maple-leaf-2 {
@@ -167,8 +184,8 @@ body {
   width: 140px;
   transform: scale(-1, 1);
   rotate: 17deg;
-  bottom: 325px;
-  left: 670px;
+  bottom: 210px;
+  left: 540px;
 }
 
 .maple-leaf-3 {
@@ -176,9 +193,9 @@ body {
   z-index: 1;
   filter: drop-shadow(0px 5px 5px #0000007a);
   width: 145px;
-  rotate: 25deg;
-  bottom: 330px;
-  left: 70px;
+  rotate: 30deg;
+  bottom: 230px;
+  right: 215px;
 }
 
 .row-1 {
@@ -194,6 +211,7 @@ body {
   margin: 1em 0;
   padding: 30px 0;
   width: 80%;
+  position: relative;
 }
 
 .header {
@@ -241,10 +259,6 @@ img#biggest-chibi-canada {
   }
 }
 
-img#biggest-chibi-canada:hover {
-  cursor: help;
-}
-
 .nav {
   width: 200px;
   margin: auto;
@@ -263,8 +277,49 @@ li:hover {
 .nav a {
   transition: all ease 0.5s;
   color: #df6b69;
+  text-decoration: none;
 }
 
 .nav a:hover {
   color: #823138;
+}
+
+.row-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 5px;
+  gap: .8rem;
+}
+
+.updates {
+  border: solid;
+  width: 25%;
+}
+
+.update-box {
+  height: 100px;
+  overflow: auto;
+  scrollbar-width: none;
+  padding: 5px;
+  text-align: justify;
+}
+
+.update-box p {
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+
+.chatbox {
+  border: solid;
+  width: 25%;
+}
+
+.status {
+  border: solid;
+  width: 25%;
+}
+
+.chibi-canada {
+  width: 25%;
 }
