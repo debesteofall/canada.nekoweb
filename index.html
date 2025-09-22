@@ -9,46 +9,149 @@
 </head>
 
 <body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            <img src="https://files.catbox.moe/q63y5c.gif">
+        </div>
+        <div class="snowflake">
+            <img src="https://files.catbox.moe/q63y5c.gif">
+        </div>
+        <div class="snowflake">
+            <img src="https://files.catbox.moe/q63y5c.gif">
+        </div>
+        <div class="snowflake">
+            <img src="https://files.catbox.moe/q63y5c.gif">
+        </div>
+        <div class="snowflake">
+            <img src="https://files.catbox.moe/q63y5c.gif">
+        </div>
+        <div class="snowflake">
+            <img src="https://files.catbox.moe/q63y5c.gif">
+        </div>
+        <div class="snowflake">
+            <img src="https://files.catbox.moe/q63y5c.gif">
+        </div>
+        <div class="snowflake">
+            <img src="https://files.catbox.moe/q63y5c.gif">
+        </div>
+        <div class="snowflake">
+            <img src="https://files.catbox.moe/q63y5c.gif">
+        </div>
+        <div class="snowflake">
+            <img src="https://files.catbox.moe/q63y5c.gif">
+        </div>
+        <div class="snowflake">
+            <img src="https://files.catbox.moe/q63y5c.gif">
+        </div>
+        <div class="snowflake">
+            <img src="https://files.catbox.moe/q63y5c.gif">
+        </div>
+    </div>
+
     <div class="wrapper">
         <div class="begin">
-            <img src="" alt="">
+            <img src="statics/canada-top.png" alt="pixiv 6694098">
         </div>
 
         <div class="row-1">
-            <div class="header">
-                <h1>o, canada</h1>
+            <img src="/statics/maple-leaf.png" alt="" class="maple-leaf-1">
+
+            <img src="/statics/maple-leaf.png" alt="" class="maple-leaf-2">
+            
+            <img src="/statics/maple-leaf.png" alt="" class="maple-leaf-3">
+            
+            <div class="textbox">
+                <div class="header">
+                    <h1>o, canada</h1>
+                </div>
                 <div class="desc">
-                    <p>hallooo im aero this is a very very wip i havent coded in about a year LMAFO. uh awesome</p>
+                    hallooo im aero this is a very very wip i havent coded in about a year lmfao. uh awesome
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in mollitia reiciendis minus,
+                        beatae, temporibus similique illo expedita unde, praesentium molestiae cum nisi voluptas? Quia
+                        maiores assumenda, dicta hic repellendus labore illum illo ad dolorum inventore vitae quidem
+                        delectus quod consequatur tempora non autem. Eaque enim, distinctio quidem, corrupti itaque
+                        atque, porro illum eum quisquam ratione velit perferendis in nisi nihil quam reprehenderit
+                        dolores? Natus ad facere beatae earum vel, nisi culpa optio quis illo sunt eius ab, sapiente
+                        nihil aut cupiditate odio id inventore amet laudantium nemo? Hic dignissimos odit voluptate.
+                        Ipsum molestiae eligendi, quas nulla iusto saepe animi?
+                    </p>
                 </div>
             </div>
-            <div id="biggest-chibi-canada">
-                <img src="" alt="">
-            </div>
-            <div class="nav"></div>
-        </div>
 
-        <div class="row-2">
-            <div class="updates"></div>
-            <div class="chatbox"></div>
-            <div class="status"></div>
-            <div class="chibi-canada">
-                <img src="" alt="">
-            </div>
-        </div>
+            <img src="statics/biggest-chibi-canada.png" id="biggest-chibi-canada">
 
-        <div class="row-3">
-            <div class="stamps-and-blinkies"></div>
-            <div class="webrings"></div>
-            <div class="music"></div>
-        </div>
+            <script>
+                const AudioURL = "https://audio.jukehost.co.uk/CeujdITUR38ryD7IdL28yrX8Sjjlhqcu";
 
-        <div class="row-4">
-            <div class="chibi-canada">
-                <img src="" alt="">
+                let playing = false;
+                const audio = new Audio(AudioURL);
+
+                const icon = document.getElementById("biggest-chibi-canada");
+
+                document.getElementById("biggest-chibi-canada").addEventListener(
+                    "click",
+                    () => {
+                        playing = !playing;
+                        if (playing) audio.play();
+                        else audio.pause();
+                    }
+                );
+            </script>
+
+            <div class="nav">
+                <div class="header nav">
+                    <h1>navigation</h1>
+                </div>
+
+                <ul>
+                    <li><a href="/">home</a></li>
+                    <li><a href="/aboutme.html">about me</a></li>
+                    <li><a href="/diary.html">diary</a></li>
+                    <li><a href="/shrines">shrines</a></li>
+                </ul>
             </div>
-            <div class="footer"></div>
         </div>
     </div>
+
+    <div class="row-2">
+        <div class="updates"></div>
+        <div class="chatbox"></div>
+        <div class="status"></div>
+        <div class="chibi-canada">
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <div class="row-3">
+        <div class="stamps-and-blinkies"></div>
+        <div class="webrings"></div>
+        <div class="music"></div>
+    </div>
+
+    <div class="row-4">
+        <div class="chibi-canada">
+            <img src="" alt="">
+        </div>
+        <div class="footer"></div>
+    </div>
+    </div>
 </body>
+
+
+<html>
+
+<head>
+    <style>
+        div.song {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: auto;
+        }
+    </style>
+</head>
+
 
 </html>
