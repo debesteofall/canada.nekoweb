@@ -153,14 +153,26 @@ body::-webkit-scrollbar {
 body {
   margin: auto;
   margin-top: 15px;
-  width: 800px;
   padding: 15px;
+  background-image: url(https://64.media.tumblr.com/f7eef9170a8784b9b3dee632b0efc1f1/1ce85e776db37f35-be/s1280x1920/789d3a7d9afbc6c770d1c4c10b44f3ae01137415.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 p {
   margin: 10px 0px;
-  ;
   line-height: 1.5em;
+}
+
+.wrapper {
+  height: 100%;
+  border: solid;
+  margin: auto;
+  width: 800px;
+  padding: 10px 55px;
+  border: 15px solid;
+  border-image: url('https://files.catbox.moe/wrn5k0.png') 8 fill round;
 }
 
 .begin {
