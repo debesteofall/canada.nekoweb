@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'angelic serif';
+  src: url(https://files.catbox.moe/bl42j2.ttf);
+}
+
 @-webkit-keyframes snowflakes-fall {
   0% {
     top: -10%
@@ -137,12 +142,9 @@
   animation-delay: 4s, 2.5s
 }
 
-/* Start https://www.cursors-4u.com */
 * {
   cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur), auto !important;
 }
-
-/* End https://www.cursors-4u.com */
 
 body::-webkit-scrollbar {
   display: none;
@@ -215,6 +217,7 @@ p {
 }
 
 .header {
+  font-family: 'angelic serif';
   text-align: center;
   margin: -15px;
 }
@@ -230,6 +233,10 @@ p {
   overflow: scroll;
   scrollbar-width: none;
   height: 190px;
+}
+
+.desc p {
+  margin-top: -5px;
 }
 
 img#biggest-chibi-canada {
@@ -288,12 +295,12 @@ li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 5px;
+  margin: 0px 5px 35px 5px;
   gap: .8rem;
+  height: 160px;
 }
 
 .updates {
-  border: solid;
   width: 25%;
 }
 
@@ -301,7 +308,7 @@ li:hover {
   height: 100px;
   overflow: auto;
   scrollbar-width: none;
-  padding: 5px;
+  padding: 10px;
   text-align: justify;
 }
 
@@ -311,15 +318,139 @@ li:hover {
 }
 
 .chatbox {
-  border: solid;
   width: 25%;
 }
 
 .status {
-  border: solid;
   width: 25%;
 }
 
+.status p {
+  margin: 10px;
+  text-align: justify;
+}
+
 .chibi-canada {
+  width: auto;
+  height: 275px;
+  filter: drop-shadow(0px 5px 5px #0000007a);
+}
+
+.row-2>.chibi-canada {
+  position: relative;
+  top: -40px;
+}
+
+.row-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .8rem;
+  height: 200px;
+}
+
+.stamps-and-blinkies {
   width: 25%;
+  height: 100%;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.stamps-and-blinkies img {
+  display: block;
+  margin: 5px auto;
+  width: 80%;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.webrings {
+  width: 30%;
+  height: 100%;
+  overflow: scroll;
+  scrollbar-width: none;
+  margin-right: 15px;
+}
+
+.webring {
+  margin-bottom: 5px;
+}
+
+.music {
+  border: 9px solid;
+  border-image: url('https://files.catbox.moe/kgeylk.gif') 5 fill round;
+  background: transparent;
+  height: 100%;
+  width: 45%;
+}
+
+#listening {
+  padding: 10px;
+  height: 160px;
+  display: flex;
+}
+
+#status-message {
+  font-style: italic;
+  color: grey;
+  font-size: 20px;
+  margin: auto;
+  position: relative;
+  top: -20px;
+}
+
+#listening img {
+  float: left;
+  margin-right: 20px;
+  position: relative;
+  top: -2px;
+  left: 5px;
+  height: 80%;
+  border-radius: 12px;
+  box-shadow: 0px 2px 3px #0000007a;
+  border-style: double;
+  border-width: 5px;
+}
+
+#trackInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: -18px;
+  text-transform: lowercase;
+  text-align: justify;
+  width: 140px;
+}
+
+#trackName {
+  font-style: italic;
+}
+
+#artistName {
+  margin-top: -15px;
+}
+
+.row-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 110px 5px 50px 5px;
+  gap: .8rem;
+  height: 160px;
+}
+
+.footer {
+  width: 75%;
+}
+
+.footer img {
+  width: 100%;
+  position: relative;
+  bottom: 20px;
+}
+
+.row-4>.chibi-canada {
+  position: relative;
+  top: -30px;
 }
